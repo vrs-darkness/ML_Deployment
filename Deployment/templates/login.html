@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Login Page</title>
+</head>
+<Body style="background-color: black;">
+  <div style = "margin-left:800px;margin-top:300px;width:300px;height:300px; box-shadow: -82px 75px 29px 9px rgba(110,53,53,0.5);
+   -webkit-box-shadow: -82px 75px 29px 9px rgba(18, 55, 175, 0.5);
+  -moz-box-shadow: -82px 75px 29px 9px rgba(29, 109, 214, 0.5);border-radius:10px;border-style: solid ; border-width: 3px; border-color:blue;">
+
+  <form style="padding-left:1px ; padding-top:50px; margin:20px" action="checker" method="POST">
+    <label style="margin-left:100px ; color:aliceblue" for="UID">LOGIN</label><br><br>
+    <input type="text"  placeholder="UserName" name = "UID" value ="" style="width:250px; height:35px;border-radius:10px;border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;"><br> <br>
+    <input type="password"  placeholder="Password" name = "Pass" value ="" style="width:250px; height:35px;border-radius:10px;border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;"><br><br>
+    <input type="submit" value="LOG IN" style="width:100px;margin-left:80px; height:25px;border-radius:15px; background-color: blue; border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;"\ >
+  </form>
+</div>
+<h3 style="color:red;margin-left:1050px;font-size: 15px;">{{data}}</h3>
+</Body>
+
+</html>

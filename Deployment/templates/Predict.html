@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<body style="background-color:black;">
+    <h1>
+        {{ITEM}}
+    </h1>
+    <div style="display:flex;column-gap:300px;">
+        <div style="margin-left: 350px;margin-top: 180px; width: 450px; height: 400px; ; box-shadow: -82px 75px 29px 9px rgba(110,53,53,0.5);
+        -webkit-box-shadow: -82px 75px 29px 9px rgba(18, 55, 175, 0.5);
+        -moz-box-shadow: -82px 75px 29px 9px rgba(29, 109, 214, 0.5);border-radius:10px; border-style:solid;border-color:blue;border-width: 3px ;">
+            <form style="padding-left: 100px;padding-top:150px;" action="find" method="POST">
+                <label for = "Exp"  style="color:aliceblue">Enter your No of Years of  Experience: </label> <br><br>
+            
+                <input name="Exp" type="number" step="0.01" style="margin-left: 20px;border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: hidden;width: 190px; height:30px;border-radius: 10px;"\> <br><br>
+                <input type="submit" value="PREDICT"style ="margin-left: 80px;border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: hidden;width:80px;height:25px;border-radius:10px;background-color:blue ;"\>
+
+            </form>
+        </div>
+        <div>
+            <h2> Years Of Experience Vs Salary</h2>
+            <img alt="image" src="{{url_for('static', filename='graph.png')}}"  style="padding-left: 50px;padding-top:50px;">
+        </div>
+    </div>
+    <h3 style="color:red;margin-top:200px;margin-left:250px;">{{output}}</h3>
+</body>
+</html>
